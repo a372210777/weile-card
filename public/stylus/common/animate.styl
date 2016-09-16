@@ -1,0 +1,23 @@
+@import '../common/func'
+
+.fade-enter
+  transition(all .3s ease-out)
+  opacity: 0.01
+.fade-enter.fade-enter-active
+  opacity: 1
+.fade-leave
+  transition(all .3s ease-out)
+  opacity: 1
+.fade-leave.fade-leave-active
+  opacity: 0.01
+  
+.slide-in-left-enter
+  transition(all .3s ease-out)
+  transform(translateX(-100%))
+.slide-in-left-enter.slide-in-left-enter-active 
+  transform(translateX(0))
+.slide-in-left-leave 
+  transition(all .3s ease-in)
+  transform(translateX(0))
+.slide-in-left-leave.slide-in-left-leave-active 
+  transform(translateX(-61.8%)) 

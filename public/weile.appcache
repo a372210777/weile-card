@@ -1,0 +1,9 @@
+CACHE MANIFEST
+# 2015-09-14 14:53 v2.0.2 
+/css/normalize.min.css
+/img/launch.png
+/js/bundle.js
+/css/bundle.css
+NETWORK:
+*
+

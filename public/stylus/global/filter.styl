@@ -1,0 +1,68 @@
+@import '../common/func'
+
+#global-filter
+  position: relative
+  li 
+    height: 40px
+    line-height: 40px
+    text-align: center
+  li.hover
+    background: #eee
+  li.selected
+    color: weile-red-color
+  .half-content
+    float: left
+    width: 50%  !important
+  .half-content:first-of-type
+    background: #fff !important
+  .header-wrap
+    border-bottom: 1px solid #e5e5e5
+    li
+      float: left
+      box-sizing: border-box
+      width: 33.333333333333336%
+      color: #666
+      background: #fff
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+    li:after
+      content: ""
+      display: inline-block
+      margin-left: 7px
+      margin-bottom: 3px
+      width: 6px
+      height: 6px
+      box-sizing: border-box
+      border: 1px solid #666
+      border-width: 1px 0 0 1px
+      transform(rotate(-135deg))
+      transition(all .3s ease)
+    li.active:after
+      border-color: #E74C3C
+      margin-bottom: 0
+      transform(rotate(45deg))
+  .content-wrap
+    position: absolute
+    width: 100%
+    padding-bottom: 18px
+    z-index: 2
+    background: #ddd
+    .iscroll-wrap
+      width: 100%
+      height: 224px
+      background: #eee
+      overflow: hidden
+      ul
+        min-height: 226px
+  .content-wrap:before
+    content: ''
+    position: absolute
+    width: 24px
+    height: 6px
+    bottom: 4px
+    left: 50%
+    margin-left: -12px
+    border-top: 1px solid #999
+    border-bottom: 1px solid #999
+    

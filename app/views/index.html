@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html manifest="weile.appcache">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="browsermode" content="application">
+  <meta name="renderer" content="webkit">
+  <title>微乐.卡券</title>
+  <link rel="apple-touch-startup-image" href="/img/ios/startup.png">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/ios/logo-57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/ios/logo-114.png">
+  <link rel="stylesheet" href="/css/normalize.min.css">
+  <link rel="stylesheet" href="/css/bundle.css">
+  <style type="text/css">
+    #weile-launch-wrap{
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      color: #fff;
+      padding-top: 48px;
+      text-align:center;
+      background: #E72F17;
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease;
+    }
+    #weile-launch-wrap h1{
+      letter-spacing: 4px;
+    }
+    #weile-launch-wrap .content{
+      text-align: center;
+      padding-bottom: 264px;
+      background: url('/img/launch.png') bottom center no-repeat;
+      background-size: 240px;
+    }
+    #weile-launch-wrap.leave{
+      opacity: 0.01;
+    }
+  </style>
+</head>
+<body>
+  <section id="weile-launch-wrap">
+    <h1>微乐</h1>
+    <p class="content" style="font-size: 16px;">以电子智能卡券服务您的生活</p>
+  </section>
+</body>
+<script type="text/javascript" src="/js/bundle.js"></script>
+</html>

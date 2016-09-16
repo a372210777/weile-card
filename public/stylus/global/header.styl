@@ -1,0 +1,125 @@
+@import '../common/func'
+
+#global-header
+  height: header-height  
+  header
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    height: header-height
+    background: #333
+    overflow: hidden
+    z-index: 100
+    .icon-btn
+      width: header-height
+      height: 100%
+      line-height: header-height
+      text-align: center
+      color: #fff
+    .menu-btn
+      position: relative
+      transition(all .2s ease)
+    .menu-btn:before,.menu-btn:after
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      content: ""
+      margin: auto
+      width: 20px
+      height: 2px
+      border-radius: 1px
+      background: #fff
+    .menu-btn:after
+      transform(rotate(90deg))
+  aside
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    padding-right: 38.2%
+    margin-top: header-height
+    z-index: 100
+    transition(all .2s ease-out)
+    transform(translateX(-100%))
+    ul
+      height: 100%
+      background: #333
+      li
+        box-sizing: border-box
+        width: 100%
+        line-height: 48px
+        padding: 0 16px
+        border-top: 1px dotted #292929
+        color: #ccc
+        text-decoration: none
+#global-header.active
+  header .menu-btn
+    transform(rotate(-45deg))
+  aside
+    transform(translateX(0))
+    
+
+#second-header
+  height: header-height   
+  header
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    height: header-height
+    background: #333
+    z-index: 101
+    .goback-btn
+      width: header-height
+      height: 100%
+      line-height: header-height
+      text-align: center
+      color: #fff
+      .go-back-icon 
+        display: block
+        width: 14px
+        height: 14px
+        margin-top: 17px
+        margin-left: 18px
+        border: 2px solid #fff
+        border-width: 2px 0 0 2px
+        box-sizing: border-box
+        transform(rotate(-45deg))
+    .title
+      display: inline-block
+      padding-left: 4px
+      line-height: header-height
+      color: #fff
+    .right-btn 
+      width: header-height
+      height: 100%
+      line-height: header-height
+      text-align: center
+      color: #fff
+      
+#header-title-wrap
+  position: fixed
+  top: 0
+  left: 52px
+  line-height: header-height
+  color: #fff
+  z-index: 100
+#header-right-btn-wrap
+  position: fixed
+  top: 0
+  right: 0
+  width: header-height
+  height: header-height
+  line-height: header-height
+  text-align: center
+  color: #fff
+  z-index: 100
+  
+#global-header.disabled,
+#global-header.disabled + .f-view-container #header-title-wrap,
+#global-header.disabled + .f-view-container #header-right-btn-wrap
+  display: none

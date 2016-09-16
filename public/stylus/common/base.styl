@@ -1,0 +1,68 @@
+@import './func'
+
+@font-face 
+  font-family: 'fontello'
+  src: url('../fonts/fontello.eot')
+  src: url('../fonts/fontello.eot#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff') format('woff'),
+       url('../fonts/fontello.ttf') format('truetype'),
+       url('../fonts/fontello.svg#fontello') format('svg')
+  font-weight: normal 
+  font-style: normal
+
+body 
+  font: 14px/1.5 Tahoma,Helvetica,Arial,sans-serif
+  font-family: 'Microsoft YaHei',Tahoma,Helvetica,Arial,sans-serif
+  line-height: 1.428571429
+  color: #333333
+  background-color: #EBEBEB
+input
+  -webkit-appearance: none
+input:focus
+  box-shadow(0 0)
+input::-webkit-input-placeholder {
+    color: #9A9A9A
+}
+a,a:visited,a:active
+  text-decoration: none
+  color: initial
+
+.fontello-icon 
+  font-family: "fontello" !important
+  font-style: normal
+  font-weight: normal
+  font-size: 20px
+  display: inline-block
+  text-decoration: inherit
+  text-align: center
+  font-variant: normal
+  text-transform: none
+.hide
+  display: none !important
+.pull-left
+  float: left
+.pull-right
+  float: right
+.clearfix:after
+  content: "."
+  display: block
+  height: 0
+  visibility: hidden
+  clear: both
+.list-unstyled
+  list-style: none
+  padding: 0
+  margin: 0
+.f12
+  font-size: 12px
+.f14
+  font-size: 14px
+.f16
+  font-size: 16px
+.f-view-container
+  max-width: 480px
+  min-height: 360px
+  margin: auto 0
+  overflow-x: hidden
+.f-link-wrap
+  text-decoration: none
